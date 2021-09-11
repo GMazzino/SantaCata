@@ -1,0 +1,122 @@
+// Variables, definiciones iniciales,  generales y otros
+//-------------------------------------------------------
+//=======================================================
+// VARIABLES
+//=======================================================
+// COLORES
+$colorClaro: #fdedde;
+$colorOscuro: #ba773c;
+
+// TEXTOS
+$defaultFontSize:1.6rem;
+$fuenteTexto: 'Lato', sans-serif;
+$fuenteTitulos: 'Berkshire Swash', cursive;
+$fuenteSubTitulos: 'Euphoria Script', cursive;
+$letter-spacing: 0.2rem;
+$word-spacing: 0.5rem;
+$line-height: 2rem;
+$tamLetraEtiquetaH:(
+    h1: 4rem,
+    h2: 3rem,
+    h3: 2.4rem,
+    h4: 1.8rem,
+    // h5: 7rem, //Titulo banner
+    // h6: 3rem //Subtitulo banner
+);
+//OTROS ATRIBUTOS DE ESTILO
+//Tamaño para bordes redondeados
+$bordeRedondeado: 1rem;
+//Sombras
+$sombraTexto: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.2);
+$sombraCont: 1.5rem 1.5rem 1.5rem rgba(0,0,0,0.6);
+//DEFINICIONES INICIALES Y GENERALES
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    //1rem=10px
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-size: $defaultFontSize;
+    letter-spacing: $letter-spacing;
+    word-spacing: $word-spacing;
+    line-height: $line-height;
+    margin: 0 0.5rem;
+    background-color: $colorClaro;
+    color: $colorOscuro;
+    font-family: $fuenteTexto;
+}
+// ENCABEZADOS H
+@each $h, $valor in $tamLetraEtiquetaH{
+    #{$h}{
+        font-size: $valor;
+        font-family: $fuenteTitulos;
+        text-align: center;
+        text-shadow: $sombraTexto;
+        margin-bottom: 2rem;
+        font-weight: 500;
+    }
+}
+.titulo{
+    margin-bottom: 7rem;
+}
+a{
+    text-decoration: none;
+}
+em {
+    font-weight: 900;
+}
+figcaption{
+    font-size: 1rem;
+    padding: 0 0.5rem;
+}
+main{
+    margin: 0 3rem;
+}
+p{
+    margin-bottom: 2rem;
+    &::first-letter{
+        margin-left: 5rem;
+    }
+}
+// CONTENEDORES
+//Contenedor flex
+@mixin cont-flex ($direccion:row, $alin-ppal:center, $alin-sec:center, $alin-wrap:center, $wrap:wrap, $alto: auto, $ancho:100%, $margen-y:0, $margen-x:0, $relleno-y:0, $relleno-x:0, $gap-fil:0, $gap-col:0) {
+    display: flex;
+    flex-flow: $direccion $wrap;
+    justify-content: $alin-ppal;
+    align-items: $alin-sec;
+    align-content: $alin-wrap;
+    height: $alto;
+    width: $ancho;
+    margin: $margen-y $margen-x;
+    padding: $relleno-y $relleno-x;
+    row-gap: $gap-fil;
+    column-gap: $gap-col;
+}
+.cont--sombra{
+    box-shadow: $sombraCont;
+}
+// Columna de contenedor flexbox. Alineación eje X
+.cont__col--izq{
+    margin-left:0;
+}
+.cont__col--centro{
+    margin: 0 auto;
+}
+.cont__col--der{
+    margin-right: 0;
+}
+//Contenedor grid
+@mixin cont-grid ($col:3, $fil:2, $gap:0.5rem, $alin-cont:center){
+    display: grid;
+    grid-template-columns: repeat(#{$col},auto);
+    grid-template-rows: repeat(#{$fil},auto);
+    grid-auto-flow: row;
+    grid-gap: #{$gap};
+    justify-content: #{$alin-cont};
+}

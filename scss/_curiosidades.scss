@@ -1,0 +1,89 @@
+.contenedorPpal{
+    @include cont-flex($alin-ppal:space-evenly, $gap-fil:1.5rem, $gap-col:1.5rem);
+    margin-bottom: 7rem;
+}
+.contenedorPpal > section > img{
+  transition: all 0.2s ease-in-out;
+  &:hover{
+    cursor: pointer;
+    box-shadow: $sombraCont;
+    transform: scale(1.02);
+  }
+}
+.underlay{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top:0;
+  right:0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.7);
+  /* Pongo valor de z-index en 1021 para que el underlay se muestre por encima del */
+  /* menu de navegacion que de manera predeterminada tiene z-index 1020            */
+  z-index: 1021;
+  animation-name: animOverlay;
+  animation-duration: 0.3s;
+  @keyframes animOverlay{
+    from{transform: scale(0);}
+    to{transform:scale(1);} 
+  }
+}
+.articulos{
+  background-color: $colorOscuro;
+  color: $colorClaro;
+  padding: 1rem;
+  width: 70vw;
+  height: 80vh;
+  overflow-y: scroll;
+  @media only screen and (max-width: 768px){
+    padding: 0.5rem;
+    width:80vw;
+  }
+  @media only screen and (max-width: 576px){
+    width:90vw;
+  }
+/* boton que cierra el contenedor de articulos */
+  > i{
+    font-size: 3rem;
+    transition: all 0.2s ease-in-out;
+    position: sticky;
+    top:0;
+    float: right;
+    &:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+    @media only screen and (max-width: 768px){
+      font-size: 2.4rem;
+    }
+    @media only screen and (max-width: 576px){
+      font-size: 1.8rem;
+    }
+  }
+}
+.articulos ul,
+.articulos p{
+  margin-left: 6rem;
+  margin-right: 6rem;
+  @media only screen and (max-width: 768px){
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  @media only screen and (max-width: 576px){
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+.articulos ul li{
+  margin-bottom: 2rem;
+  ::first-letter{
+    margin-left: 5rem;
+  }
+}
+.articulos figure{
+  max-width: min-content;
+  margin: 2rem 6rem 2rem 2rem;
+  float: right;
+}

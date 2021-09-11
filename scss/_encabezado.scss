@@ -1,0 +1,62 @@
+/*******************************************************************/
+/* ---                      BANNER                             --- */
+/*******************************************************************/
+.banner{
+    @include cont-flex($margen-y:0.5rem);
+}
+.banner__titulo{
+    font-family: $fuenteTitulos;
+    font-size: 7rem;
+    font-weight: 500;
+    line-height: 6rem;
+    text-align: center;
+    text-shadow: $sombraTexto;
+    margin-bottom: 0;
+    margin-left: -113px; //desplazo el ancho del logo para que quede centrado
+    &::first-letter{
+        margin-left: 0;
+    }
+}
+.banner__subTitulo{
+    @extend .banner__titulo;
+    font-family: $fuenteSubTitulos;
+    font-size: 3rem;
+}
+/*******************************************************************/
+/* ---                 MENU DE NAVEGACION                      --- */
+/*******************************************************************/
+header{
+    position: relative;
+}
+.navbar{
+    background-color: $colorOscuro;
+    border-radius: $bordeRedondeado;
+    box-shadow: 0 0.3rem 1.5rem rgba(0,0,0,0.6);
+    border: $colorOscuro 0.1rem solid;
+    margin-bottom: 4rem;
+}
+.fa-bars{
+    display: inline-block;
+    padding: 1.5rem;
+}
+.nav-link,
+.dropdown-item,
+.fa-bars{
+    color: $colorClaro;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+}
+.nav-link:hover,
+.nav-link:focus,
+.dropdown-item:hover,
+.fa-bars:hover{
+    background-color: $colorClaro;
+    color: $colorOscuro;
+    background-image: radial-gradient(ellipse,$colorClaro 30%, $colorOscuro);
+    border-radius: 1rem;
+}
+.dropdown-menu{
+    background-color: $colorOscuro;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: $sombraCont
+}

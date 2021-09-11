@@ -1,0 +1,53 @@
+/*******************************************************************/
+/*---                     PIE DE PAGINA                         ---*/
+/*******************************************************************/
+.piePag{
+    @include cont-flex($direccion:column, $wrap:nowrap, $alin-sec:center, $margen-y:2rem, $margen-x:0.2rem, $relleno-y:1rem, $ancho:auto );
+}
+.piePag--bgcolor{
+    background-color: $colorOscuro;
+}
+.piePag--redondeado{
+    border-radius: $bordeRedondeado;
+}
+.piePag__redes{
+    @include cont-flex($margen-x:1.5rem, $ancho:auto);
+}
+.redes--texto{
+    color:$colorClaro;
+    font-size: 1.3rem;
+    font-weight: 900;
+    p{
+        margin-bottom: 0;
+        &::first-letter{
+            margin-left: 0;
+        }
+    }
+}
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram,
+.fa-google-plus-g{
+    margin-left: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    &:hover{
+        background-color: $colorClaro;
+        color: $colorOscuro;
+    }
+}
+.piePag__descargo{
+    @include cont-flex($wrap:nowrap, $direccion:column,$margen-y:0,$margen-x:1.5rem, $ancho:auto)    
+}
+.descargo--texto{
+    color:$colorClaro;
+    text-align: center;
+    font-size: 1rem;
+    p{
+        margin-bottom: 0;
+        &::first-letter{
+            margin-left: 0;
+        }
+    }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="santa cata, contacto, vino, enoturismo, uvas">
+    <meta name="description" content="Esperamos tus consultas">
+    <meta rel="canonical" content="https//www.santacata.com.ar">
+    <meta property="og:title" content="Escribinos a Santa Cata">
+    <meta property="og:image" content="https://www.santacata.com.ar/media/ogIcon.png">
+    <meta property="og:description" content="Esperamos tus consultas">
+    <meta property="og:url" content="https://www.santacata.com.ar">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Euphoria+Script&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Boostrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Contacto</title>
+  </head>
+  <body>
+    <div class="banner">
+      <div class="cont__col--izq">
+        <img src="../media/logo.png" alt="Santa Cata logo">
+      </div>
+      <div class="cont__col--centro">
+        <h5 class="banner__titulo">Santa Cata</h5>
+        <h6 class="banner__subTitulo">Amamos beber</h6>
+      </div>
+    </div>        
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <i class="navbar-toggler fa fa-bars" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"></i>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link py-3 px-5" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-3 px-5" href="variedades.html">Variedades</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle py-3 px-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Rutas
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item py-3 px-5" href="rutas.html#arg">Argentina</a></li>
+                  <li><a class="dropdown-item py-3 px-5" href="rutas.html#esp">España</a></li>
+                  <li><a class="dropdown-item py-3 px-5" href="rutas.html#fra">Francia</a></li>
+                  <li><a class="dropdown-item py-3 px-5" href="rutas.html#exc">Excursiones</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-3 px-5" href="curiosidades.html" aria-disabled="true">Curiosidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-3 px-5" href="contacto.html" aria-disabled="true">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="titulo">Santa Cata - Contacto</h1>
+      <form action="#">
+        <label for="nombre">Tu nombre:&nbsp;</label>
+        <input type="text" name="nombre" id="nombre" autocapitalize="on"><br><br>
+        <label for="mail">Tu correo:&nbsp;</label>
+        <input type="email" name="mail" id="mail"><br><br>
+        <label for="area">Área de interés</label>
+        <select name="area" id="area">
+          <option value="V">Variedades</option>
+          <option value="R">Rutas</option>
+          <option value="C">Curiosidades</option>
+          <option value="S">Sugerencias</option>
+        </select><br><br>
+        <textarea name="msg" id="msg" cols="30" rows="10"></textarea><br><br>
+        <label for="newsletter">Suscribite a nuestro newsletter</label>
+        <input type="checkbox" name="newsletter" id="newsletter"><br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+      </form>
+    </main>
+    <footer class="piePag piePag--bgcolor piePag--redondeado">
+      <section class="piePag__redes redes--texto">
+        <p>Seguinos en nuestras redes</p>
+        <p>
+          <i class="fab fa-google-plus-g"></i>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+        </p>
+      </section>
+      <section class="piePag__descargo descargo--texto">
+        <p>Las marcas registradas son propiedad de sus respectivos dueños.</p>
+        <p>Beber con moderación.</p>
+      </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </body>
+</html>

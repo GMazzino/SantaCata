@@ -1,0 +1,17 @@
+/*******************************************************************/
+/* ---                   INDEX.HTML                            --- */
+/*******************************************************************/
+.grillaImagenes{
+    @include cont-grid();
+    margin-bottom: 4rem;
+    & img {
+        max-width: 100%;
+    }   
+    @media only screen and (max-width: 768px){
+        grid-template-columns: repeat(2,auto);
+        & > div:nth-last-of-type(1),
+        & > div:nth-last-of-type(2){
+            display: none;
+        }
+    }
+}

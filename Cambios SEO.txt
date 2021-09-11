@@ -1,0 +1,12 @@
+- Se agrega etiqueta meta dirección canónica
+- Se agrega etiqueta meta con keywords
+- Se agrega etiqueta meta con description
+- Se agrega etiqueta meta con título protocolo Open Graph
+- Se agrega etiqueta meta con imagen protocolo Open Graph
+- Se agrega etiqueta meta con descripción protocolo Open Graph
+- Se agrega etiqueta meta con URL protocolo Open Graph
+- Se agrega página de error 404.html
+- Se ajusta formato de imágenes a jpg para menor tamaño
+- Se cambia etiquetas "h" en el banner por "p" ya que no son representativas para el contenido ni semánticamente
+- Se ajusta atributo "alt" en imágenes
+

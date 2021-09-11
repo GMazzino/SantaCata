@@ -1,0 +1,81 @@
+form{
+    display: block;
+    width: 60vw;
+    text-align: center;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 768px){
+    form{
+        width: 70vw;
+    }
+}
+@media only screen and (max-width: 576px){
+    form{
+        width: 85vw;
+    }
+}
+input{
+    border: none;
+    background-color: $colorClaro;
+    color: $colorOscuro;
+    border-bottom: 0.1rem solid $colorOscuro; 
+    padding: 0.2rem 1rem;
+    &:not([type=checkbox]){
+        width: 40%;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+select{
+    background-color: $colorOscuro;
+    color: $colorClaro;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    &:focus{
+        outline: none;
+    }
+}
+textarea{
+    background-color: $colorClaro;
+    color: $colorOscuro;
+    border: 0.1rem solid $colorOscuro;
+    padding: 1rem;
+    resize: none;
+    height: 17rem;
+    width: 60%;
+    &:focus{
+        outline: none;
+    }
+}
+input[type=submit],
+input[type=reset]{
+    background-color: $colorOscuro;
+    color: $colorClaro;
+    border: 0.1rem solid $colorOscuro;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    width: auto;
+    &:hover{
+        background-color: $colorClaro;
+        color: $colorOscuro;
+        background-image: radial-gradient(ellipse,$colorClaro 30%, $colorOscuro);
+    }
+}
+.btnInicio404{
+    background-color: $colorOscuro;
+    color: $colorClaro;
+    border: 0.1rem solid $colorOscuro;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    &:hover{
+        background-color: $colorClaro;
+        color: $colorOscuro;
+        background-image: radial-gradient(ellipse,$colorClaro 30%, $colorOscuro);
+    }
+}
+.cont404{
+    @include cont-flex($direccion:column, $alin-ppal:center,$alto:300px,$gap-fil:5rem);
+}

@@ -1,0 +1,41 @@
+/*******************************************************************/
+/* ---                     RUTAS.HTML                          --- */
+/*******************************************************************/
+.imgFloatDer {
+    margin: 1rem 1rem 1.5rem 2rem;
+    float: right;
+    border: $colorOscuro solid 1rem;
+    border-bottom: 0;
+    figcaption{
+        background-color: $colorOscuro;
+        color: $colorClaro;
+    }
+}
+.imgFloatIzq{
+    @extend .imgFloatDer;
+    float: left;
+    margin: 1rem 3rem 1.5rem 0;
+}
+.contImg{
+    @include cont-flex($alin-ppal:space-evenly, $gap-fil:1.5rem, $gap-col:1.5rem);
+    margin-bottom: 4rem;
+    img{
+        border: $colorOscuro solid 1rem;
+        box-shadow: $sombraCont;
+    }
+}
+table, th, tr, td {
+    margin: 0 auto 7rem auto;
+    border-collapse: collapse;
+    border: $colorOscuro 0.1rem solid;
+    padding: 1rem 1rem;
+    text-align:center;
+    font-size: 1.2rem;
+}
+li{
+    text-align: left;
+    list-style-type: none;
+}
+thead th{
+    font-size: 1.5rem;
+}

@@ -1,0 +1,21 @@
+/*******************************************************************/
+/* ---                 VARIEDADES.HTML                         --- */
+/*******************************************************************/
+.carousel{
+    margin-bottom: 5rem;
+}
+.carousel-item > img{
+    max-width: 100%;
+}
+.carousel-caption{
+    background-color: $colorOscuro;
+    color: $colorClaro;
+    padding: 1.5rem;
+    border-radius: $bordeRedondeado;
+    cursor: pointer;
+}
+.fa-chevron-left,
+.fa-chevron-right{
+    color: $colorClaro;
+    font-size: 3rem;
+}   
