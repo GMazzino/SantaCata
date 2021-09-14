@@ -1,3 +1,6 @@
+/*******************************************************************/
+/* ---                CURIOSIDADES.HTML                        --- */
+/*******************************************************************/
 .contenedorPpal{
     @include cont-flex($alin-ppal:space-evenly, $gap-fil:1.5rem, $gap-col:1.5rem);
     margin-bottom: 7rem;
@@ -44,8 +47,8 @@
   @media only screen and (max-width: 576px){
     width:90vw;
   }
-/* boton que cierra el contenedor de articulos */
   > i{
+    /* boton que cierra el contenedor de articulos */
     font-size: 3rem;
     transition: all 0.2s ease-in-out;
     position: sticky;

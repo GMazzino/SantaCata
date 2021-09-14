@@ -1,3 +1,6 @@
+/*******************************************************************/
+/* ---                  CONTACTO.HTML                          --- */
+/*******************************************************************/
 form{
     display: block;
     width: 60vw;
@@ -14,6 +17,12 @@ form{
         width: 85vw;
     }
 }
+@media only screen and (max-width: 320px){
+    form{
+        width: 95vw;
+    }
+}
+
 input{
     border: none;
     background-color: $colorClaro;
@@ -46,6 +55,21 @@ textarea{
     width: 60%;
     &:focus{
         outline: none;
+    }
+}
+@media only screen and (max-width:768px){
+    textarea{
+        width: 75%;
+    }
+}
+@media only screen and (max-width:576px){
+    textarea{
+        width: 85%;
+    }
+}
+@media only screen and (max-width:320px){
+    textarea{
+        width: 95%;
     }
 }
 input[type=submit],

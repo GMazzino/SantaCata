@@ -4,15 +4,21 @@
 .carousel{
     margin-bottom: 5rem;
 }
-.carousel-item > img{
-    max-width: 100%;
+.contImgUva{
+    position: relative;
+    > img{
+        max-width: 100%;
+        min-width: 30rem;
+        border-top-left-radius: $bordeRedondeado;
+        border-top-right-radius: $bordeRedondeado;
+    }
 }
-.carousel-caption{
+.descripcionUva{
     background-color: $colorOscuro;
     color: $colorClaro;
     padding: 1.5rem;
-    border-radius: $bordeRedondeado;
-    cursor: pointer;
+    border-bottom-left-radius: $bordeRedondeado;
+    border-bottom-right-radius: $bordeRedondeado;
 }
 .fa-chevron-left,
 .fa-chevron-right{

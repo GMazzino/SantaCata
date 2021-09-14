@@ -4,7 +4,7 @@
 // VARIABLES
 //=======================================================
 // COLORES
-$colorClaro: #fdedde;
+$colorClaro: rgb(253, 237, 222);
 $colorOscuro: #ba773c;
 
 // TEXTOS
@@ -20,8 +20,6 @@ $tamLetraEtiquetaH:(
     h2: 3rem,
     h3: 2.4rem,
     h4: 1.8rem,
-    // h5: 7rem, //Titulo banner
-    // h6: 3rem //Subtitulo banner
 );
 //OTROS ATRIBUTOS DE ESTILO
 //Tamaño para bordes redondeados
@@ -76,6 +74,11 @@ figcaption{
 }
 main{
     margin: 0 3rem;
+}
+@media only screen and (max-width: 768px){
+    main{
+        margin: 0 0;
+    }
 }
 p{
     margin-bottom: 2rem;
