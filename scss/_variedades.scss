@@ -2,7 +2,7 @@
 /* ---                 VARIEDADES.HTML                         --- */
 /*******************************************************************/
 .carousel{
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
 }
 .contImgUva{
     position: relative;
@@ -24,4 +24,17 @@
 .fa-chevron-right{
     color: $colorClaro;
     font-size: 3rem;
+    padding: 2rem;
+    clip-path: circle(40%);
+    background-color: $colorOscuro;
 }   
+@media only screen and (max-width: 768px) {
+    .fa-chevron-left,
+    .fa-chevron-right{
+        padding: 2rem;
+        clip-path: circle(25%);
+    }
+}
+.carousel-control-next, .carousel-control-prev{
+    opacity: 1;
+}

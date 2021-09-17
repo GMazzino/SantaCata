@@ -24,18 +24,83 @@
         box-shadow: $sombraCont;
     }
 }
-table, th, tr, td {
-    margin: 0 auto 7rem auto;
-    border-collapse: collapse;
-    border: $colorOscuro 0.1rem solid;
-    padding: 1rem 1rem;
-    text-align:center;
-    font-size: 1.2rem;
-}
 li{
     text-align: left;
-    list-style-type: none;
 }
-thead th{
+.tablaExc{
+    display: grid;
+    grid-template-areas:
+        "t1 t2 t3 t4 t5"
+        "f11 f12 f13 f14 f15"
+        "f21 f22 f23 f24 f25";
+    gap: 0.1rem;
+    background-color: #ba773c;
+    border: 0.1rem solid #ba773c;
+    font-size: 1.2rem;
+    margin-bottom: 7rem;
+    & > div{
+        background-color: #fdedde;
+        text-align: center;
+    }
+  }
+.tituloGrid{
+    text-align: center;
     font-size: 1.5rem;
+    font-weight: 900;
+    padding: 1rem;
+}
+@media only screen and (max-width: 550px){
+    .tablaExc{
+        grid-template-areas:
+        "t1 f11 f21"
+        "t2 f12 f22"
+        "t3 f13 f23"
+        "t4 f14 f24"
+        "t5 f15 f25";
+    }
+    .tituloGrid{
+        font-size: 1.2rem;
+        padding: 1rem 0.5rem;
+    }
+}
+.f11{
+  grid-area: f11;
+}
+.f12{
+  grid-area: f12;
+}
+.f13{
+  grid-area: f13;
+}
+.f14{
+  grid-area: f14;
+}
+.f15{
+  grid-area: f15;
+}
+.f21{
+  grid-area: f21;
+}
+.f22{
+  grid-area: f22;
+}
+.f23{
+  grid-area: f23;
+}
+.f24{
+  grid-area: f24;
+}
+.f25{
+  grid-area: f25;
+}
+.anchoArticulo{
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  @media only screen and (max-width: 768px){
+    width:80vw;
+  }
+  @media only screen and (max-width: 576px){
+    width:90vw;
+  }
 }

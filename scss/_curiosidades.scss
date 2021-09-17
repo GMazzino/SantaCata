@@ -53,7 +53,7 @@
     transition: all 0.2s ease-in-out;
     position: sticky;
     top:0;
-    float: right;
+    left: 100%;
     &:hover{
       transform: scale(1.1);
       cursor: pointer;

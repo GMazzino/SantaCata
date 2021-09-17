@@ -2,7 +2,7 @@
 /*---                     PIE DE PAGINA                         ---*/
 /*******************************************************************/
 .piePag{
-    @include cont-flex($direccion:column, $wrap:nowrap, $alin-sec:center, $margen-y:2rem, $margen-x:0.2rem, $relleno-y:1rem, $ancho:auto );
+    @include cont-flex($direccion:column, $wrap:nowrap, $alin-sec:center, $margen-y:0.1rem, $margen-x:0.2rem, $relleno-y:1rem, $ancho:auto );
 }
 .piePag--bgcolor{
     background-color: $colorOscuro;
