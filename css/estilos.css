@@ -366,9 +366,7 @@ li {
 
 .tablaExc {
   display: grid;
-  grid-template-areas: "t1 t2 t3 t4 t5"
- "f11 f12 f13 f14 f15"
- "f21 f22 f23 f24 f25";
+  grid-template-areas: "t1 t2 t3 t4 t5" "f11 f12 f13 f14 f15" "f21 f22 f23 f24 f25";
   gap: 0.1rem;
   background-color: #ba773c;
   border: 0.1rem solid #ba773c;
@@ -386,11 +384,7 @@ li {
 
 @media only screen and (max-width: 550px) {
   .tablaExc {
-    grid-template-areas: "t1 f11 f21"
- "t2 f12 f22"
- "t3 f13 f23"
- "t4 f14 f24"
- "t5 f15 f25"; }
+    grid-template-areas: "t1 f11 f21" "t2 f12 f22" "t3 f13 f23" "t4 f14 f24" "t5 f15 f25"; }
   .tituloGrid {
     font-size: 1.2rem;
     padding: 1rem 0.5rem; } }
@@ -482,7 +476,6 @@ li {
     transform: scale(1); } }
 
 .articulos {
-  position: relative;
   background-color: #ba773c;
   color: #fdedde;
   padding: 1rem;
@@ -534,13 +527,9 @@ li {
     margin-left: 5rem; }
 
 .articulos figure {
-  /* position: absolute; */
   max-width: min-content;
-  display: inline-block;
   margin: 2rem 6rem 2rem 2rem;
-  float: right; 
-  /* right: 0; */
-}
+  float: right; }
 
 /*******************************************************************/
 /* ---                  CONTACTO.HTML                          --- */
